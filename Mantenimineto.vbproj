@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2615527-32B0-4DD0-8660-D39A80559D46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Mantenimineto.My.MyApplication</StartupObject>
+    <RootNamespace>Mantenimineto</RootNamespace>
+    <AssemblyName>Mantenimineto</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://www.programacionintegral.com/public_html/clinica/mantenimiento/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://programacionintegral.com/clinica/mantenimiento/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.html</WebPage>
+    <ApplicationRevision>58</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Mantenimineto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Mantenimineto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mantenimiento.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8CFF872699E8A1DE08C2E369696974BA9919EFB4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bloqueo.Designer.vb">
+      <DependentUpon>Bloqueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bloqueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bloqueos.Designer.vb">
+      <DependentUpon>bloqueos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bloqueos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bloqueo_cerrar.Designer.vb">
+      <DependentUpon>bloqueo_cerrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bloqueo_cerrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\actividades.Designer.vb">
+      <DependentUpon>actividades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\actividades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="catalogos\Areas.Designer.vb">
+      <DependentUpon>Areas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\Areas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boleta.Designer.vb">
+      <DependentUpon>boleta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="boleta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\frm_equiposRed.Designer.vb">
+      <DependentUpon>frm_equiposRed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\frm_equiposRed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\selecciona_equipo.Designer.vb">
+      <DependentUpon>selecciona_equipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\selecciona_equipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hoja_de_mantenimiento.Designer.vb">
+      <DependentUpon>hoja_de_mantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hoja_de_mantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfase\fotos_reportes.Designer.vb">
+      <DependentUpon>fotos_reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="interfase\fotos_reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfase\mysql_sdk.vb" />
+    <Compile Include="Inventarios\Catalogo_de_productos.Designer.vb">
+      <DependentUpon>Catalogo_de_productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\Catalogo_de_productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\PRODUCTO_NUEVO.Designer.vb">
+      <DependentUpon>PRODUCTO_NUEVO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\PRODUCTO_NUEVO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\catalogo_tareas.Designer.vb">
+      <DependentUpon>catalogo_tareas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\catalogo_tareas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categorias.Designer.vb">
+      <DependentUpon>categorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="categorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clinicaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clinicaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="clinicaDataSet.vb">
+      <DependentUpon>clinicaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Seleccionar_area.Designer.vb">
+      <DependentUpon>Seleccionar_area.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Seleccionar_area.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_destinatario.Designer.vb">
+      <DependentUpon>Dialogo_destinatario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_destinatario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoDataSet.vb">
+      <DependentUpon>mantenimientoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\CERRAR_REPORTE.Designer.vb">
+      <DependentUpon>CERRAR_REPORTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\CERRAR_REPORTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\Departamentos.Designer.vb">
+      <DependentUpon>Departamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\Departamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\equipos.Designer.vb">
+      <DependentUpon>equipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\equipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hojadetrabajo.Designer.vb">
+      <DependentUpon>hojadetrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hojadetrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mantenimientoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="operacion\Mantenimiento_cuartos.Designer.vb">
+      <DependentUpon>Mantenimiento_cuartos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\Mantenimiento_cuartos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\listado_de_tareas.Designer.vb">
+      <DependentUpon>listado_de_tareas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\listado_de_tareas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\Reportes_abiertos.Designer.vb">
+      <DependentUpon>Reportes_abiertos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\Reportes_abiertos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\servicios_agregar_producto.Designer.vb">
+      <DependentUpon>servicios_agregar_producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\servicios_agregar_producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\solicitar_mantenimiento_preventivo.Designer.vb">
+      <DependentUpon>solicitar_mantenimiento_preventivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\solicitar_mantenimiento_preventivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\Terminar_tarea.Designer.vb">
+      <DependentUpon>Terminar_tarea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\Terminar_tarea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\nueva_actividad.Designer.vb">
+      <DependentUpon>nueva_actividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\nueva_actividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\pendientes_de_asignar.Designer.vb">
+      <DependentUpon>pendientes_de_asignar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\pendientes_de_asignar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proveedores.Designer.vb">
+      <DependentUpon>proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operacion\registro_nuevo.Designer.vb">
+      <DependentUpon>registro_nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\registro_nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Lista_de_Trabajo.Designer.vb">
+      <DependentUpon>Lista_de_Trabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Lista_de_Trabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rutinas.Designer.vb">
+      <DependentUpon>rutinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rutinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sdk.vb" />
+    <Compile Include="sdk_mail.vb" />
+    <Compile Include="operacion\seguimientos.Designer.vb">
+      <DependentUpon>seguimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacion\seguimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\staff.Designer.vb">
+      <DependentUpon>staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\staff_nuevo.Designer.vb">
+      <DependentUpon>staff_nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\staff_nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicios\registro_servicio.Designer.vb">
+      <DependentUpon>registro_servicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="servicios\registro_servicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="sistema\Permisos.Designer.vb">
+      <DependentUpon>Permisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sistema\Permisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sistema\skype.Designer.vb">
+      <DependentUpon>skype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sistema\skype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bloqueo.resx">
+      <DependentUpon>Bloqueo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bloqueos.resx">
+      <DependentUpon>bloqueos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bloqueo_cerrar.resx">
+      <DependentUpon>bloqueo_cerrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\actividades.resx">
+      <DependentUpon>actividades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\Areas.resx">
+      <DependentUpon>Areas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boleta.resx">
+      <DependentUpon>boleta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\frm_equiposRed.resx">
+      <DependentUpon>frm_equiposRed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\selecciona_equipo.resx">
+      <DependentUpon>selecciona_equipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hoja_de_mantenimiento.resx">
+      <DependentUpon>hoja_de_mantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfase\fotos_reportes.resx">
+      <DependentUpon>fotos_reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\Catalogo_de_productos.resx">
+      <DependentUpon>Catalogo_de_productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\PRODUCTO_NUEVO.resx">
+      <DependentUpon>PRODUCTO_NUEVO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\catalogo_tareas.resx">
+      <DependentUpon>catalogo_tareas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="categorias.resx">
+      <DependentUpon>categorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Seleccionar_area.resx">
+      <DependentUpon>Seleccionar_area.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_destinatario.resx">
+      <DependentUpon>Dialogo_destinatario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\CERRAR_REPORTE.resx">
+      <DependentUpon>CERRAR_REPORTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\Departamentos.resx">
+      <DependentUpon>Departamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\equipos.resx">
+      <DependentUpon>equipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hojadetrabajo.resx">
+      <DependentUpon>hojadetrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\Mantenimiento_cuartos.resx">
+      <DependentUpon>Mantenimiento_cuartos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\listado_de_tareas.resx">
+      <DependentUpon>listado_de_tareas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\Reportes_abiertos.resx">
+      <DependentUpon>Reportes_abiertos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\servicios_agregar_producto.resx">
+      <DependentUpon>servicios_agregar_producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\solicitar_mantenimiento_preventivo.resx">
+      <DependentUpon>solicitar_mantenimiento_preventivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\Terminar_tarea.resx">
+      <DependentUpon>Terminar_tarea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\nueva_actividad.resx">
+      <DependentUpon>nueva_actividad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\pendientes_de_asignar.resx">
+      <DependentUpon>pendientes_de_asignar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proveedores.resx">
+      <DependentUpon>proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacion\registro_nuevo.resx">
+      <DependentUpon>registro_nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boleta.rdlc" />
+    <EmbeddedResource Include="orden_de_trabajo.rdlc" />
+    <EmbeddedResource Include="reportes\Lista_de_Trabajo.resx">
+      <DependentUpon>Lista_de_Trabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\hojadetrabajo.rdlc" />
+    <EmbeddedResource Include="operacion\seguimientos.resx">
+      <DependentUpon>seguimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\staff.resx">
+      <DependentUpon>staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\staff_nuevo.resx">
+      <DependentUpon>staff_nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rutinas.resx">
+      <DependentUpon>rutinas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicios\registro_servicio.resx">
+      <DependentUpon>registro_servicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sistema\Permisos.resx">
+      <DependentUpon>Permisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sistema\skype.resx">
+      <DependentUpon>skype.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="clinicaDataSet.xsc">
+      <DependentUpon>clinicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="clinicaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clinicaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clinicaDataSet.xss">
+      <DependentUpon>clinicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mantenimientoDataSet.xsc">
+      <DependentUpon>mantenimientoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mantenimientoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>mantenimientoDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="mantenimientoDataSet.xss">
+      <DependentUpon>mantenimientoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Mantenimineto_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mantenimiento.ico" />
+    <Content Include="AA_BITACORA DE ACTUALIZACIONES.txt" />
+    <None Include="Resources\Recycle Bin Full 1.png" />
+    <None Include="Resources\Add Item.png" />
+    <None Include="Resources\bloqueo.jpg" />
+    <None Include="Resources\todo2.jpg" />
+    <None Include="Resources\todas.png" />
+    <None Include="Resources\todo1.jpg" />
+    <None Include="Resources\todo.jpg" />
+    <None Include="Resources\printer1.png" />
+    <None Include="Resources\equipos.jpg" />
+    <None Include="Resources\vobo.jpg" />
+    <None Include="Resources\nueva actividad.jpg" />
+    <None Include="Resources\entrega.jpg" />
+    <None Include="Resources\cerrar.jpg" />
+    <None Include="Resources\seguimiento.jpg" />
+    <None Include="Resources\Application.png" />
+    <None Include="Resources\asignar.png" />
+    <None Include="Resources\asignar.jpg" />
+    <None Include="Resources\usuario_nuevo.jpg" />
+    <None Include="Resources\Restart.png" />
+    <None Include="Resources\REPORTES_mybusinesspos.png" />
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SKYPE4COMLib">
+      <Guid>{03282B5D-B38F-469D-849A-09B0A7F4881B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

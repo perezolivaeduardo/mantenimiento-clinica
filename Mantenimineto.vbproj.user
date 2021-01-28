@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>ftp://www.programacionintegral.com/public_html/clinica/mantenimiento/|ftp://www.programacionintegral.com/public_html/mantenimiento/|\\ESPERANZA-CLOUD\web\apps\mantenimiento\|esperanza-cloud/apps/mantenimiento/|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://programacionintegral.com/clinica/mantenimiento/|http://programacionintegral.com/mantenimiento/|http://esperanza.dyndns-server.com/apps/mantenimiento/|https://esperanza.dyndns-server.com/apps/mantenimiento/|\\ESPERANZA-CLOUD\web\apps\mantenimiento\</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>es-ES</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>

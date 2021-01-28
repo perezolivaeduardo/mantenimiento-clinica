@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="mantenimientoDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>1b0b357a-7673-4155-b2e1-39698ded0b10</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="id_servicio">
+          <DataField>id_servicio</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="folio">
+          <DataField>folio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Departamento">
+          <DataField>Departamento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_responsable">
+          <DataField>id_responsable</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="responsable">
+          <DataField>responsable</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_solicitante">
+          <DataField>id_solicitante</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="solicitante">
+          <DataField>solicitante</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="quien_solicita">
+          <DataField>quien_solicita</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fechayhora_solicitud">
+          <DataField>fechayhora_solicitud</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="id_quien_registra">
+          <DataField>id_quien_registra</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Registra">
+          <DataField>Registra</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fechayhora_registro">
+          <DataField>fechayhora_registro</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="id_area">
+          <DataField>id_area</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Area">
+          <DataField>Area</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Ubicacion">
+          <DataField>Ubicacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="reporte">
+          <DataField>reporte</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tipo">
+          <DataField>tipo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fechaprogramacion">
+          <DataField>fechaprogramacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cuarto">
+          <DataField>cuarto</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="fechayhora_reparacion">
+          <DataField>fechayhora_reparacion</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="observaciones">
+          <DataField>observaciones</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_atendio">
+          <DataField>id_atendio</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Atendio">
+          <DataField>Atendio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_superviso">
+          <DataField>id_superviso</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="superviso">
+          <DataField>superviso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_usuario">
+          <DataField>id_usuario</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="id_recibio">
+          <DataField>id_recibio</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Recibio">
+          <DataField>Recibio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fechayhora_recibido">
+          <DataField>fechayhora_recibido</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="estatus">
+          <DataField>estatus</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="comentarios">
+          <DataField>comentarios</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_status">
+          <DataField>id_status</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="STATUS">
+          <DataField>STATUS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>mantenimientoDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>mantenimientoDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\perez\Google Drive\Esperanza\Mantenimiento\Mantenimineto\mantenimientoDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>sql_reportes</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>sql_reportesTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=format(Sum(Fields!id_servicio.Value, "DataSet1"),"00000")</Value>
+                <Style>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>ExtraBold</FontWeight>
+                  <Color>Red</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.47633cm</Top>
+        <Left>15.68133cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>3.08208cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Image Name="Image1">
+        <Source>Embedded</Source>
+        <Value>logonegromediano</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.15883cm</Top>
+        <Left>0.94403cm</Left>
+        <Height>2.25833cm</Height>
+        <Width>5.33511cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>REQUISICION DE MANTENIMIENTO</Value>
+                <Style>
+                  <FontSize>13pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>13pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>0.41487cm</Top>
+        <Left>0.33549cm</Left>
+        <Height>0.6cm</Height>
+        <Width>18.42792cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Departamento que solicita : "+First(Fields!Departamento.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>3.19299cm</Top>
+        <Left>0.94403cm</Left>
+        <Height>0.6cm</Height>
+        <Width>10.70208cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Nombre de quien solicita : "+ First(Fields!quien_solicita.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>3.96938cm</Top>
+        <Left>0.94403cm</Left>
+        <Height>0.6cm</Height>
+        <Width>10.70208cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Fecha : "+format(First(Fields!fechayhora_solicitud.Value, "DataSet1"),"dd/MM/yyyy")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>4.74577cm</Top>
+        <Left>0.94403cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.77541cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Hora : "+format( First(Fields!fechayhora_solicitud.Value, "DataSet1"), "HH:mm")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>4.71049cm</Top>
+        <Left>6.64781cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.82833cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="A R E A "</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>3.19299cm</Top>
+        <Left>12.40049cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5.93958cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Area.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>3.79299cm</Top>
+        <Left>12.40049cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5.93959cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Ubicacion del Desperfecto : "+ First(Fields!Ubicacion.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>5.64885cm</Top>
+        <Left>0.94404cm</Left>
+        <Height>0.6cm</Height>
+        <Width>17.81937cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DESCRIPCION</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>6.44737cm</Top>
+        <Left>0.94403cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.0875cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!reporte.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>7.42632cm</Top>
+        <Left>0.94403cm</Left>
+        <Height>3.37813cm</Height>
+        <Width>17.81938cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Registro : "+First(Fields!Registra.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>11.00253cm</Top>
+        <Left>0.94404cm</Left>
+        <Height>0.6cm</Height>
+        <Width>9.56437cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Fecha Registro : "+format(First(Fields!fechayhora_registro.Value, "DataSet1"),"dd/MM/yyyy")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>10.98084cm</Top>
+        <Left>10.89237cm</Left>
+        <Height>0.6cm</Height>
+        <Width>7.87104cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Cuarto : "+first(Fields!cuarto.Value, "DataSet1").ToString</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox15</rd:DefaultName>
+        <Top>4.6482cm</Top>
+        <Left>12.40049cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5.93958cm</Width>
+        <ZIndex>14</ZIndex>
+        <Visibility>
+          <Hidden>=iif(Sum(Fields!cuarto.Value, "DataSet1")&gt;0, false,true)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>4.74664in</Height>
+    <Style>
+      <Border>
+        <Color>LimeGreen</Color>
+        <Style>Solid</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>7.55208in</Width>
+  <Page>
+    <PageHeight>14cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <InteractiveHeight>14cm</InteractiveHeight>
+    <InteractiveWidth>21cm</InteractiveWidth>
+    <LeftMargin>0.5cm</LeftMargin>
+    <RightMargin>0.5cm</RightMargin>
+    <TopMargin>0.5cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logonegromediano">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDACYaHSEdGCYhHyErKCYtOV8+OTQ0OXVTWEVfinmRj4h5hYOYq9u6mKLPpIOFvv/Bz+Lp9fj1lLf////u/9vw9ez/2wBDASgrKzkyOXA+PnDsnYWd7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Oz/wAARCACsAUADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDaooooAKKKKACimu6xoXdgqjqTWRc6vJK/k2KFiejYyT9B/jQBqzXEUC7pZFQe561mT67GpxBEX92OBUcOjzTt5l5KQT1AOT+daUFhawYMcS5H8TcmgDI+3andf6lCF/2E4/M0os9Vk4eV0B/vS/4Vv0UAc/8A2HdMctLFn6k/
+0qVNGuo/9XdBP90kVt0UAY4sdUQ/Leg/7zE/zFSB9Xh+9HHMPwz/AErUooAzl1UIcXdvLASepGRV2GeKdd0UiuPY08gEEEAg9jVSXTYGbfDmCQdGjOP0oAuUVQE9xaHF0vmxf89kHI+oq6jpIgdGDKehBoAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUN1cxWsRklPHYdyaW5uI7aFpZDwO3cn0rKtreTU5vtV1kQg/Knr/APWoAYsd1rD75CYrcHgD+nr9a17a2itU2QrtHc9z9alACgAAADoBS0AFFFFABRRRQAUUUUAFFFFABRRRQAVTktnt3M1ngE8tF0Vvp6GrlFAEVvcJcR7kyCDhlPBU+hqWqtzC6v8Aabf/AFoHzL2kHp9fSpoJkniEiHg+vUe1AElFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSMQqlicADJJpaydbum+W0i5eT72PTsKAIBu1i+yci2i/X/65rcVQqhVAAHAA7VBY2y2lssQ69WPqasUAFFFFABRRRQAUUUUAFFFFABRSM6oMswUDqScVAb62BwJQ59EBb+VAFiiqwu3bPl2s7f7wCj9TTBPen/lyUfWYf4UAXKKpfartT+8sGx6pIGP5U9L6IqDIssOf+eiEfr0oAtVSkH2S6Eo/1MzYk/2W7H8e9W0kSRd0bqy+qnIpJo1miaNxlWGDQA+iq1jIzRNFIcyRHY2e/ofxFWaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGyOscbOxwqjJrF0lGvL+S7l/hOQPc9PyFWddn8u0WIHmRv0H+RU2kQ+TYR+r/Ofx/wDrYoAu0UUUAFFFFABRRUU1wsRC4LyN91F6n/PrQBLSMwVSzEADqTVdkupR/rkh9Qi7j+Z/wpYbRIzlpJJWByDI27H0HSgBd0s3+rBi
+T++w+Y/Qdvx/KkFnF1cvIe+9yc/hnFWKKAIVtLZDlbeIH12CpqKKACiiigAooooAaY0ZgzIpYdDjkU6iigCnLmHUYpBwsw8tv94cj+oq5VXUULWbsv3o/wB4p9COasRuJI1dejAEfjQA6iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOf1gmfU0hXthPxP/AOsVvgBQABgCufhxN4hO7nEjfpnH8q6GgAoo6VA95bJ964jz6bhmgCemSyxwoXlcKo7mohe2rdJ4/wAWxUVyI5pYZk2TiMnKgg8HuPcYoAVZ5roD7OpijP8Ay1ccn6D+pqaC2jg3Fcs7fedjktQbmFfvSKnsxwfyNH2mM/c3P/uqSPz6UATUVB+/lB/5YL68Fv8AAfrUE2mQOpK71l7PvOSfegC9UH2y380R+cm88YBzUEFvbXMSsyu2Dgo8jHaR1BGateTF5Ri8tBGf4QvFAElFVvJng/4933r/AM85D0+jf45oF6i8Tq8B/wBscfmOKALNFRpPDJ/q5Uf/AHWBqSgAooooAKKKKAEYblIPQiq+mkmwiB6qCp/A4/pVmq9gc22fV3/9CNAFiiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOf0j59Vdz1wx/X/69bLW7O5Z55dueFU7QPy5rJ0tdmsXC+gYf+PCt2gCEWkGctErn1cbj+ZqUAKMAAD2FLRQAU140kGHRWHowzTqKAIDaJ/A0kX+45AH4dP0pBHdR/dmWUeki4P5j/CrFFAEInAH71DH7nlfz/xxU3WiqdxaOEJtJDEepQH5T/h+FAE8UKxyyup/1hBI9DipaqQxRSR5hTyJF4IUYIPv61NbyGWPLrtdTtYehH+c/jQBLRRRQBC9pbOSWgiJPfYKRLK2jOUiVT7VPRQAUUUUAFFFFACMdqlj0AzVfTVK2EOerDd+fP8AWjUCfsxjU/NKRGv4/wD1s1YUBVCqMAcA
+UALRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAGLGPK8RsAPv5/UZrarH1TEGp2txnC9GPsDz+hrRla5TJjjSUem7af8D+lAE9FVFubs8NYsD/10WmNJdSTJExSAOpPync3GPwHX3oAtSzxQjMjhc9B3P0HeiGUyqW8t4xnjeME0RQpFnaOT1YnJP1NNuiRENpwd6D82AoAmopssixRl3OFFRA3MnOEiHYMCx/HBGP1oAnpgkVywQ/MpwQe1RmZ4pUSVRtfgOvTPoRUUziG/jcn5Xibf7BeQf1NADpJB+7nThi4jZT35wQfp1/A+tPludsoiijMsnVgDjaPc1UjWW58tk+QZMjMRnBIIAHqQDV6GFIU2oOpySeST6k0ALFKsuQMhl6qeop9QXCMHjmjGWU4YDup6/wCP4VPQAUUUUAFFFFABRRVeeRnb7PCfnP32H8A/x9KAET9/dGT+CHKr7t3P4dPzqzTY41ijVEGFUYAp1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFHWYTNYMR1jO8f1qbT5/tFnHITlsYb6jrU7AMpUjIIwaydMY2d9NZOeCcoT3//AFj+VAGvUFzCZCkkZCyxklS3Q5HINT0UAQA3J6pEh9d5b9MD+dNktWlXMkpZxyuBhVbscf4k1ZooAqSsZJ7VWXAJZiPcDp/X8Kt1HPCJkA3FWU7lYdQarlr9eAkD/wC1kj9KALFxF50DIDgnofQ9QagktVuXdpSQGwuB3UHP6n9BT4oZiQ9zKGbsiDCj+p/GrFACKoVQqgADgAdqWkLqv3mA+pqnLPLLIYosQoOsr9T/ALo/rQBNPdLEwjVWklPRF6/j6CoxHeyctOkH+yibvzJqSFbeBdqOuTySWyWPqTU4IIyOlAFeKSZJBFOu7P3ZEHB+o7GrFV7m9gtlJkkGR/CDk/lTIJLm4iEitFGrdBguce5yKALdIzKilmYKB1JO
+BVfYzfevW+iBR/Q0ggtdwaRhIw6GR92PwNAAZ3uDttRhO8zDj/gI7/yqaGFIU2pnk5JPJJ9TUgIIyDxTfMT++v50AOopvmx/89F/OgOh+66n6GgB1FNEiHo6/nR5sf8Az0X86AHUUA56UUAFFHSmo6yLuRgw9QcigB1FFN82P/nov50AOoopCQoySAPegBaKb5if31/OhpEU4Z1B9zigB1FM82P/AJ6J/wB9Cl8xP76/nQA6ikBDDIII9qWgAopqSJICUdWAODtOadQAVm6xbMyLdQ8Sw88en/1q0qCM0AQWV0t3brIvXow9DU9YsqPpN350YJtpD8yjtWxHIkqB42DKwyCKAHUUUUAFMnZkgkdBllUkD1OOKfRQBHDMk8YkjOVNMnuAjeXGpkmPRB29yewpHs4HctsKk9djFc/XFSxQxwpsiQKvtQBTnsRcRF7t9zgEgLwF+n5d6xtKtI7y4aOUsAF3fKfcVuBrmKMxSRGVQMCVWHI9we9YGn3f2SZn/vLjOM4/DIoA0L7Sbe3tXlR5Nw6BiMH9KZPey22mwQxxtGWX754Pvj8+tNN5HNfWpiMrMHAZpMc5I6AcCrWv27yRRyoMiPIbHoaAHWukW/kKZlLyMMk5Ix+VQ2NuLbWZYkZtipnr16dfzqO31x441SSEPtGNwbFaVnqUF22xco/91u/0oAytatIbVomiBG8tnJz6f41atdItpbSN2L73UNkHpkUzxH/y7/8AAv6VNBqdvb20cUm8Osa8Y6/KOlAFC1aSw1TyN2ULhGHYg9Dj8qTWLOG0aLyQQGByCc9KnsbeW+vzeSLtjDbh7nsKXxF1t/8AgX9KAJbfRraW2ikZpQzoGOCO4+lNtLJbfWMJuZEQkE+p4/rTrfWbaK2ijKSlkQKcAdh9an0WaSe1d5HZj5hHJzgYFAGXrFpFaSRiEEBgc5OavRaNbyWyMWkDsoOcjg4qDxF/rYf901ONYiigVBFIZFUKAQAM0AU9Nkkt
+NSNtuypYqR2J9a6KsfTLGZrk3l0NrZJCnuT39q2KAKWrz+RYvg/M/wAg/Hr+lUvD9wMSW5PP3l/r/Sn3X+m6xFB1jhG5v5n+gqpN/wAS7WNw4TduwPQ9f6/lQB0Vc7rFnFbNEYQRv3ZGc+ldF1rK1X/j9sP+un9VoATRL3zE+zSH51Hyn1Hp+FaVxAlxEYpQSp6gHFYWqWbWc63Fv8qE5GP4TWxp92t5bhxgOOGX0NAGVp9jDLe3KOCVhbC8+5/wqa/thdaxFExIUxZJHXqak0v/AJCF/wD9dP6mtSgDLOh2qqS0kuByTkf4VjiBbi88q13FScAt6eprT1u9wPssR5P3yP5Va0mx+yw75B+9fr7D0oAt28K28CRJkhRjmo7+f7NaSSdwML9e1WKydUJur2CyU8Z3Pjt/kZ/OgCtoE+y4eBujjI+o/wDrVv1z2pobLU1mjGASHH9R/n1rfjdZI1dTlWAIPtQA6iiigBskaSxsjqGVhgg1kYm0iXIBktGPPqv+f1rZpGUMpVgCDwQe9ADYZUmjEkbBlPcU+sx7Ga0kM1g3B+9C3Q/Sp7XUIpz5bAxTDqj8GgC5RRRQAUUUUANl/wBU/wDumsLw8AbqXIH3P61qX8s8cYWCBpd4IJB+7WPZxX9lIzx2xJYYO4f/AF6ANa8sxLNBOGVBA29uOvIP9KeNQtysJDkiY7U+U8nOKz5rnVJYmjNoAGBBIQ55/GmTWd0tjZ7Iz5kJYkcEg5yPrQBqvY2shy0EefUDB/SsN4Rb60kUWdokXHPriry6leldp09/M9cED8sf1p+n2Mv2hru75lPIX0oAg8R/8u//AAL+laFlGj2UBZFYiNcZHTisvUlu75kxaOgTPfOc/wD6qv6bJcbVgmtzGqJgOT1xgUAX6w/EXW3/AOBf0rcrA1FLy+kU/ZHUJkD3oA2LRFNlBlQf3a9vaq9lGmnBbZ5dzysWXCn0FVYrrVIo0jFopCgKPlPb8aLcXk+pQz3E
+GxUBHTAHB9frQBH4i/1sP+6adqdiHtIrmMfMqDePUY61FqCXt86MbR02jGOtamnyTPF5U9uYwihck53UAQ6PfefD5Mh/eIPzFXp5RBA8rdEGaw5rC5tL4SWiMyg7lxzj2NS30l9eQ+ULN4xnJ5zmgCGxtL2dXuYZljLsckkgnn6Umo2N4kXnXEyyheOM5ArV0xpfI8qWAxCMADP8XvRqbS+T5UduZhICCR/DQAmjz+fYoCfmj+Q/h0/SoNV/4/tPH/TT+oqrp63tlI3+jMyPjI9PepL03lxcxSC0cCFsj35/+tQBsTRJNG0cgyrDBFc7+90i/wD7yf8AoS10FrJJLCHliMTZPyk1FqFmt5Bt6OvKN6UAU9HdZLy9dTlWYEH2yat6jeC0ty3G9uEHvVLQ4JYJJ1ljZDgdR9aq30N9d3LOYH2g4UY6CgCTR7M3ExupskA5Gf4m9a3JHWKNpG+6oJP4VkRXOpRRqiWSBVGAAp/xps8+pzxNEbXarjBIU5/nQBrR3Eclv56n93gnJ9BWJaw3d9PLdwSLESxGST+X8qmlF6LBLSO2bBQbm/pVjSTPGgt5LcxqoJ3nuc0AUr7T73yTLPMsojGcZJP8quaFP5toYmPMRx+B/wAmrV/JIkGI4DNvO0qPTFY1jDfWU3mrbM2Rgj1oA6KiiigAooooAKgubSG6XEyBvQ9CPxqeigCgIb21/wBTILiMfwSHDD6GnpqMW4JOrW7+kgwPwNXKRgGUhgCO4I60ACsrDKkEeoNLVY2NuGLIpib1jYr/ACocSW6FhM747Pj+gzQBJPMYyiom+RzhVzj8T7UsLSMCJY9jA9myD9KoXNw/2T7WABJEePQ54INT6bcSXMLSSEZ3YAA4FAFgyYnWLH3lLZ+hA/rSzyeVBJLjOxS2PXAqhqVy9rc27xhSWDKd3pkVcvf+PG4/65N/KgCYcjNVIb0Sxo2zDM4UqT0z0NWh90fSs1UHlWTjOd4U+45NAF+4l8mB
+5cbtozjNSEgAk9BzVe//AOPKb/dNTsAwIPQjBoAgjnlcowg/dP0O7kD1I/8Ar1YJwMmsi0vJvt62WR5aMV3Y+YgDgHtWhfEi1cA43YXPsSAf50AFrci5RmClcHgHuOoP4g1PVSOJYL0JHna8ZyCxPQjHX6mrdAEVzKYYS4UMcgYJwOSB1/Gi3m8+IPt28kYznocdfwqHVHMdkzgAlWU4PT7wo0tt9mshABkJYgdBz2oAf57m6aJUXauMsXwefQYqS4l8mB5du7YpOPWs6Wcx62I/LjbeV+ZlyRx2q7f/APHlN/uH+VACxXKyvGEBw6M3PUYIGP1/SluZmhCbFDM7bRubA6E+ntUKqF1U44DRFiO2cgZ/QUzWJfJt4pAiviT7rjIPytQBeQlkUsACRzg5FQwTvLI4KKEUsoO/JODjpiltH8y1ifaq7kBwowBUdkq4kbYu4yP82OfvGgCW5mMERYLvYkBVzjJp8brJGrqcqwyD7VXuEEt3DG+doVn4JHPA7exNOsQFieMfdSRlX2H+TQANPIZHEMQcJwxLY59BU6ncoOMZ7HtWTf3ctjcskO3EoDncM4PTitZchQCSTjqaAIbeaSV5FeNVCHbkNnJwD6D1p00zI6xxpvkYEgE4AHqT+NNtv9Zc/wDXT/2Vag1ORrdEuY8b1OzB6EH/APVQBZgmMhZXTZIhwy5z9CD6Uye4kjk2pEHwm85bHGfpUemOZ4GuH+/I3OOgxwKj1GNWkZ2AJjiLLkdwaALyMHRXHRgCM1FHch7h4tuNvRv73r+WRUpYhC3fbmqEUSxx2kylvMZhuJYnO4ZPFAH/2Q==</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>es-MX</Language>
+  <rd:ReportID>f46f60d5-6e78-4b7d-8028-2728c70d7076</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

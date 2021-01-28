@@ -1,0 +1,56 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="recordar_contraseña" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="pw" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mantenimientoConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=MATRIX\SQLSERVER12;Initial Catalog=mantenimiento;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=MATRIX\SQLSERVER12;Initial Catalog=mantenimiento;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="cadena" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=CBESERVER\SQLEXPRESS;Initial Catalog=mantenimiento;User ID=sa;Password=Integral2016</Value>
+    </Setting>
+    <Setting Name="cadena_local" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=MATRIX\SQLSERVER12;Initial Catalog=mantenimiento;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="cadena_on_line" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=CBESERVER\SQLEXPRESS;Initial Catalog=mantenimiento;User ID=sa;Password=Integral2016</Value>
+    </Setting>
+    <Setting Name="imprimir_directo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="clinicaConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\\server1\datos\clinica.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\\server1\datos\clinica.mdb</Value>
+    </Setting>
+    <Setting Name="dbcadena" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\\server1\datos\clinica.mdb</Value>
+    </Setting>
+    <Setting Name="dbcadena_local" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\perez\Datos\Clinica\clinica.mdb</Value>
+    </Setting>
+    <Setting Name="sys_aviso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="aviso" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mysqlcs" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)" />
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
